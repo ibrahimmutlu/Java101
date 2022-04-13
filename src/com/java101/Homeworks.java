@@ -180,3 +180,42 @@ public class Vucutkitle {
 
 }
 */
+
+
+// ManavKasaProgrami
+
+/*
+import java.util.Scanner;
+
+public class Manav {
+
+    public static void main(String[] args){
+
+        Scanner inp=new Scanner(System.in);
+
+        double Armut,Elma,Domates,Muz,Patlican,Tutar;
+
+// Urunlerin kilo basi fiyatlari ==> Armut=2.14  Elma=3.67  Domates=1.11  Muz=0.95  Patlican=5.0
+
+        System.out.println("Armut Kac Kilo ? :");
+        Armut=inp.nextDouble();
+
+        System.out.println("Elma Kac Kilo ? :");
+        Elma=inp.nextDouble();
+
+        System.out.println("Domates Kac Kilo ? :");
+        Domates=inp.nextDouble();
+
+        System.out.println("Muz Kac Kilo ? :");
+        Muz= inp.nextDouble();
+
+        System.out.println("Patlican Kac Kilo ? :");
+        Patlican=inp.nextDouble();
+
+        Tutar=(2.14*Armut)+(3.67*Elma)+(1.11*Domates)+(0.95*Muz)+(5.0*Patlican);
+
+        System.out.println("Toplam Tutar:"+Tutar);
+    }
+}
+
+*/
