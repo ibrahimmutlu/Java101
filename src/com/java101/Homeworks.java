@@ -151,3 +151,32 @@ public class DaireAlaniVeCevresi {
     }
 }
 */
+
+
+//Vücut Kitle indeksi
+
+/*import java.util.Scanner;
+
+public class Vucutkitle {
+
+    public static void main (String[] args) {
+
+        double boy,kilo,vucutkitleindeksi;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Lutfen boyunuzu (metre cinsinde) giriniz:");
+
+        boy=inp.nextDouble();
+
+        System.out.println("Lutfen kilonuzu giriniz:");
+
+        kilo=inp.nextDouble();
+
+        vucutkitleindeksi=(kilo/(boy*boy));
+
+        System.out.println("Vucut Kitle indeksiniz:"+vucutkitleindeksi);
+    }
+
+}
+*/
