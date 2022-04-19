@@ -271,3 +271,88 @@ public class Hesapmakinesi {
 }
 
 */
+
+
+// Kullanici Girisi
+
+/*
+import java.util.Scanner;
+
+public class Kullanicigirisi {
+
+    public static void main(String[] args){
+
+        String username="patika",password="123",newUsername="JAVA",newPassword="456";
+        int select;
+
+        Scanner input= new Scanner(System.in);
+
+        System.out.println("Kullanici adiniz:");
+
+        username=input.nextLine();
+
+        System.out.println("Sifreniz:");
+
+        password=input.nextLine();
+
+        if(username.equals("patika")&&password.equals("123")) {
+            
+            System.out.println("Giris Basarili!");
+
+        } else if(!"patika".equals(username) || !"123".equals(password)) {
+            System.out.println("Bilgiler eksik ya da hatalidir.Sifrenizi sifirlamak ister misiniz ?");
+            
+            System.out.println("1-Evet istiyorum\n2-Hayir tekrar denemek istiyorum");
+            
+            select=input.nextInt();
+            
+          switch (select) {
+              case 1:
+                  System.out.println("Yeni gireceginiz sifre eski sifreniz ile ayni olmamalidir.");
+                  
+                  System.out.println("Yeni kullanici adiniz:");
+                  
+                  Scanner inp= new Scanner(System.in);
+                  
+                  newUsername=inp.nextLine();
+
+                  System.out.println("Yeni sifreniz:");
+
+                  newPassword=inp.nextLine();
+
+                   if(newUsername.equals("JAVA")&&newPassword.equals("456")) {
+                       
+                       System.out.println("Sifre olusturuldu. Giris Basarili");
+
+                  }
+                      else {
+                       System.out.println("Sifre olusturulamadi.LUtfen baska sifre giriniz.");
+                      }
+              break;
+
+              case 2:
+                  System.out.println("Yeniden giris yapiniz.");
+
+                  System.out.println("Kullanici adiniz:");
+                  
+                  Scanner in= new Scanner(System.in);
+                  
+                  username=in.nextLine();
+
+                  System.out.println("Sifreniz:");
+
+                  password=in.nextLine();
+
+
+                   if(username.equals("patika")&&password.equals("123")) {
+                       
+                      System.out.println("Giris Basarili!");
+                  }
+                  break;
+
+          }
+        }
+        }
+
+     }
+*/
