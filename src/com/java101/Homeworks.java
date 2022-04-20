@@ -1,6 +1,5 @@
-// Notortalamasi
+// NOT ORTALAMASI
 
-/*
 package com.java101;
 
 import java.util.Scanner;
@@ -37,11 +36,11 @@ public class NotOrtalamasi {
         System.out.println(sonuc>60? "gecti":"kaldi");
     }
 }
-*/
 
-//KdvTutari
+
+//KDV TUTARI
  
- /*import java.util.Scanner;
+import java.util.Scanner;
 
 public class KdvTutari {
 
@@ -69,11 +68,11 @@ public class KdvTutari {
     }
 }
 
- */
+ 
 
 
- // Hipotenus
- /*
+ // HİPOTENUS
+ 
  import java.util.Scanner;
 
 public class Hipotenus {
@@ -100,11 +99,10 @@ public class Hipotenus {
 
     }
 }
- */
-
-//Taksimetre
  
- /*
+
+//TAKSİMETRE
+ 
  import java.util.Scanner;
 
 public class Taksimetre {
@@ -120,12 +118,12 @@ public class Taksimetre {
     }
 }
 
- */
  
  
- //DaireDilimiAlani
  
- /*
+ //DAİRE DİLİMİ ALANİ
+ 
+
  import java.util.Scanner;
 
 public class DaireAlaniVeCevresi {
@@ -150,12 +148,12 @@ public class DaireAlaniVeCevresi {
 
     }
 }
-*/
 
 
-//Vücut Kitle indeksi
 
-/*import java.util.Scanner;
+//VÜCUT KİTLE İNDEKSİ
+
+import java.util.Scanner;
 
 public class Vucutkitle {
 
@@ -179,12 +177,10 @@ public class Vucutkitle {
     }
 
 }
-*/
 
 
-// ManavKasaProgrami
+// MANAV KASA PROGRAMI
 
-/*
 import java.util.Scanner;
 
 public class Manav {
@@ -218,11 +214,9 @@ public class Manav {
     }
 }
 
-*/
 
 
-// Hesap Makinesi
-/*
+// HESAP MAKİNESİ
 import java.util.Scanner;
 
 public class Hesapmakinesi {
@@ -270,12 +264,10 @@ public class Hesapmakinesi {
     }
 }
 
-*/
 
 
-// Kullanici Girisi
+// KULLANICI GİRİŞİ
 
-/*
 import java.util.Scanner;
 
 public class Kullanicigirisi {
@@ -355,4 +347,69 @@ public class Kullanicigirisi {
         }
 
      }
-*/
+
+//SINIFI GEÇME DURUMU
+
+import java.util.Scanner;
+
+public class Sinifigecmedurumu {
+
+    public static void main(String[]args){
+
+        Scanner input=new Scanner(System.in);
+
+        int matematik,fizik,turkce,kimya,muzik;
+
+        System.out.print("Matematik notunuz:");
+        matematik= input.nextInt();
+
+        System.out.print("Fizik notunuz:");
+        fizik= input.nextInt();
+
+        System.out.print("Turkce notunuz:");
+        turkce= input.nextInt();
+
+        System.out.print("Kimya notunuz:");
+        kimya= input.nextInt();
+
+        System.out.print("Muzik notunuz:");
+        muzik= input.nextInt();
+
+        double average=(matematik+fizik+turkce+kimya+muzik)/5;
+
+        /*DİPNOT*/
+        //Ders notu 0 veya 100 arasında değilse ortalamaya katılmamıştır.Fakat bu kodun eksiği vardır.
+        // Birden çok ders 0 veya 100 arasında değilse program düzgün çalışmamaktadır.
+        // Bunu ise yine if ile farklı kombinasyonlarda yazabiliriz.Kodun uzamaması için yazılmamıştır.
+        //Ayrıca ortalama bulunurken 0 veya 100 arasında olmayan dersin sayılıp sayılmaması gerektiği
+        // ödevde anlaşımadığından dolayı ortalama tüm ders sayısına bölünmüştür.
+
+
+        if(matematik>100||matematik<0){
+             average=(fizik+turkce+kimya+muzik)/5;
+        }
+        if(fizik>100||fizik<0){
+             average=(matematik+turkce+kimya+muzik)/5;
+        }
+        if(turkce>100||turkce<0){
+             average=(matematik+fizik+kimya+muzik)/5;
+        }
+        if(kimya>100||kimya<0){
+             average=(matematik+fizik+turkce+muzik)/5;
+        }
+        if(muzik>100||muzik<0){
+             average=(matematik+fizik+turkce+kimya)/5;
+        }
+        if(average<=55) {
+            System.out.println("Sinifta kaldiniz.");
+
+        }
+        else if(average>=55){
+                System.out.println("Tebrikler! Sinifi gectiniz.");
+            }
+        System.out.print("Ders ortalamaniz:"+average);
+        }
+
+    }
+
+
