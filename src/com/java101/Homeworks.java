@@ -412,4 +412,32 @@ public class Sinifigecmedurumu {
 
     }
 
+//HAVA SICAKLIĞINA GÖRE ETKİNLİK
+
+import java.util.Scanner;
+
+public class Havasicakliginagöreetkinlik {
+
+    public static void main(String[]args){
+        int sicaklik;
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Bugun hava kac derece?:");
+
+        sicaklik= inp.nextInt();
+
+        if(sicaklik<5){
+            System.out.print("Kayak yapabilirsiniz.");
+        }
+        else if (sicaklik>=5 && sicaklik<=15){
+            System.out.println("Sinemaya gidebilirsiniz.");
+        }
+         if (sicaklik>=10 &&sicaklik<=25){
+            System.out.println("Piknige gidebilirsiniz.");
+        }
+        else if(sicaklik>25) {
+            System.out.print("Yuzmeye gidebilirsiniz");
+        }
+    }
+}
 
