@@ -484,8 +484,8 @@ public class Kücüktenbüyüge {
 }
 
 
+//BURÇ BULMA
 
-//BURC BULMA
 import java.util.Scanner;
 
 public class Burcbulma {
@@ -493,9 +493,8 @@ public class Burcbulma {
     public static void main(String[] args) {
 
         int month, day;
+        
         String burc = "";
-        boolean isError = false;
-
 
         Scanner input = new Scanner(System.in);
 
@@ -515,8 +514,6 @@ public class Burcbulma {
                     burc = "Kova";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 2) {
@@ -527,8 +524,6 @@ public class Burcbulma {
                     burc = "Balık";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 3) {
@@ -539,8 +534,6 @@ public class Burcbulma {
                     burc = "Koc";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 4) {
@@ -551,10 +544,7 @@ public class Burcbulma {
                     burc = "Boga";
                 }
             }
-        } else {
-            isError = true;
         }
-
         if (month == 5) {
             if (day >= 1 && day <= 31) {
                 if (day < 22) {
@@ -563,8 +553,6 @@ public class Burcbulma {
                     burc = "Ikizler";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 6) {
@@ -575,8 +563,6 @@ public class Burcbulma {
                     burc = "Yengec";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 7) {
@@ -587,8 +573,6 @@ public class Burcbulma {
                     burc = "Aslan";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 8) {
@@ -599,8 +583,6 @@ public class Burcbulma {
                     burc = "Basak";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 9) {
@@ -611,8 +593,6 @@ public class Burcbulma {
                     burc = "Terazi";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 10) {
@@ -623,8 +603,6 @@ public class Burcbulma {
                     burc = "Akrep";
                 }
             }
-        } else {
-            isError = true;
         }
 
         if (month == 11) {
@@ -635,10 +613,7 @@ public class Burcbulma {
                     burc = "Yay";
                 }
             }
-        } else {
-            isError = true;
         }
-
         if (month == 12) {
             if (day >= 1 && day <= 31) {
                 if (day < 22) {
@@ -647,18 +622,14 @@ public class Burcbulma {
                     burc = "Oglak";
                 }
             }
-        } else {
-            isError = true;
         }
-        
+
         if(day<1 || day>31 || month<1|| month>12) {
             System.out.println("Hatali giris yaptiniz.Tekrar deneyiniz.");
         }
             else{
                 System.out.println("Burcunuz:" + burc);
             }
-
-
 
     }
 }
