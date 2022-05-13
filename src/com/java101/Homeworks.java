@@ -781,3 +781,30 @@ public class CinZodyagı {
     }
 
 }
+
+
+//ARTIK YIL
+
+import java.util.Scanner;
+
+public class ArtikYil {
+    public static void main(String[]args){
+
+        int artikYil;
+
+        Scanner inp=new Scanner(System.in);
+
+        System.out.print("Yil giriniz : ");
+
+        artikYil=inp.nextInt();
+
+        if (artikYil % 100 != 0 && artikYil % 4 == 0) {
+                System.out.print(artikYil + " bir artik yildir!");
+        } else if(artikYil % 100 == 0 && artikYil % 400 == 0) {
+                System.out.print(artikYil + " bir artik yildir!");
+         }
+            else{
+                System.out.print(artikYil + " bir artik yil degildir!");
+            }
+    }
+}
