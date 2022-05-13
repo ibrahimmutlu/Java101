@@ -726,3 +726,58 @@ public class UcakBiletiFiyati {
     }
 }
 
+
+//ÇİN ZODYAĞI BURCU
+
+import java.util.Scanner;
+
+public class CinZodyagı {
+    public static void main(String[]args){
+
+        int dogumTarihi;
+
+    Scanner inp=new Scanner(System.in);
+
+    System.out.print("Dogum Yiliniz Kactir :");
+
+    dogumTarihi= inp.nextInt();
+
+    if(dogumTarihi%12==0) {
+        System.out.print("Cin Zodyagi Burcunuz : Maymun ");
+    }
+    else if(dogumTarihi%12==1){
+            System.out.print("Cin Zodyagi Burcunuz : Horoz");
+        }
+        else if(dogumTarihi%12==2){
+            System.out.print("Cin Zodyagi Burcunuz : Kopek");
+        }
+        else if(dogumTarihi%12==3){
+            System.out.print("Cin Zodyagi Burcunuz : Domuz");
+        }
+        else if(dogumTarihi%12==4){
+            System.out.print("Cin Zodyagi Burcunuz : Fare");
+        }
+        else if(dogumTarihi%12==5){
+            System.out.print("Cin Zodyagi Burcunuz : Okuz");
+        }
+        else if(dogumTarihi%12==6){
+            System.out.print("Cin Zodyagi Burcunuz : Kaplan");
+        }
+        else if(dogumTarihi%12==7){
+            System.out.print("Cin Zodyagi Burcunuz : Tavsan");
+        }
+        else if(dogumTarihi%12==8){
+            System.out.print("Cin Zodyagi Burcunuz : Ejderha");
+        }
+        else if(dogumTarihi%12==9){
+            System.out.print("Cin Zodyagi Burcunuz : Yilan");
+        }
+        else if(dogumTarihi%12==10){
+            System.out.print("Cin Zodyagi Burcunuz : At");
+        }
+        else if(dogumTarihi%12==11){
+            System.out.print("Cin Zodyagi Burcunuz : Koyun");
+        }
+    }
+
+}
