@@ -633,3 +633,96 @@ public class Burcbulma {
 
     }
 }
+
+
+
+//UÇAK BİLETİ FİYATI HESAPLAMA
+
+import java.util.Scanner;
+
+public class UcakBiletiFiyati {
+    
+    public static void main(String[]args){
+
+        double km,yas,yolculukTipi,NormalTutar,Yasİndirimi,IndirimliTutar,GidisDonus,ToplamTutar;
+
+        Scanner inp=new Scanner(System.in);
+
+        System.out.print("Mesafeyi km turunden giriniz : ");
+
+        km=inp.nextInt();
+
+        System.out.print("Yasinizi giriniz : ");
+
+        yas=inp.nextInt();
+
+        System.out.print("Yolculuk tipinizi giriniz:");
+
+        yolculukTipi=inp.nextInt();
+
+        NormalTutar = km * 0.10;
+
+        if(yas<12){
+           Yasİndirimi = NormalTutar*0.5;
+            IndirimliTutar=NormalTutar-Yasİndirimi;
+            if(yolculukTipi==1){
+                System.out.println("Toplam Tutar : "+IndirimliTutar);
+            }else if(yolculukTipi==2){
+                GidisDonus=IndirimliTutar*0.2;
+                ToplamTutar=(IndirimliTutar - GidisDonus)*2;
+                System.out.println("Toplam Tutar : "+ToplamTutar);
+            }
+            else if((km<0 || yas<0) || (yolculukTipi!=1 && yolculukTipi!=2)){
+                System.out.print("Hatali Veri Girdiniz.");
+            }
+
+        }
+        if(yas>=12&&yas<=24){
+            Yasİndirimi = NormalTutar*0.1;
+            IndirimliTutar=NormalTutar-Yasİndirimi;
+            if(yolculukTipi==1){
+                System.out.println("Toplam Tutar : "+IndirimliTutar);
+            }else if(yolculukTipi==2){
+                GidisDonus=IndirimliTutar*0.2;
+                ToplamTutar=(IndirimliTutar - GidisDonus)*2;
+                System.out.println("Toplam Tutar : "+ToplamTutar);
+            }
+            else if((km<0 || yas<0) || (yolculukTipi!=1 && yolculukTipi!=2)){
+                System.out.print("Hatali Veri Girdiniz.");
+            }
+
+        }
+
+        if(yas>65){
+            Yasİndirimi = NormalTutar*0.3;
+            IndirimliTutar=NormalTutar-Yasİndirimi;
+            if(yolculukTipi==1){
+                System.out.println("Toplam Tutar : "+IndirimliTutar);
+            }else if(yolculukTipi==2){
+                GidisDonus=IndirimliTutar*0.2;
+                ToplamTutar=(IndirimliTutar - GidisDonus)*2;
+                System.out.println("Toplam Tutar : "+ToplamTutar);
+            }
+            else if((km<0 || yas<0) || (yolculukTipi!=1 && yolculukTipi!=2)){
+                System.out.print("Hatali Veri Girdiniz.");
+            }
+
+        }
+
+        if(yas>24&&yas<66){
+            if(yolculukTipi==1){
+                System.out.println("Toplam Tutar :" +NormalTutar);
+            }
+            else if(yolculukTipi==2) {
+                GidisDonus=NormalTutar*0.2;
+                ToplamTutar=(NormalTutar - GidisDonus)*2;
+                System.out.println("Toplam Tutar : "+ToplamTutar);
+            }
+            else if((km<0 || yas<0) || (yolculukTipi!=1 && yolculukTipi!=2)){
+                System.out.print("Hatali Veri Girdiniz.");
+            }
+        }
+
+    }
+}
+
