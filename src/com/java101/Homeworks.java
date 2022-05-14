@@ -848,3 +848,33 @@ public class Ucvedordebolunen {
     }
 }
 
+
+
+
+//TEK SAYILARIN TOPLAMINI BULAN PROGRAM
+import java.util.Scanner;
+
+public class Teksayiyakadar {
+
+    public static void main(String[]args){
+
+        Scanner inp=new Scanner(System.in);
+
+        int i;
+        int total=0;
+
+        do {
+
+            System.out.println("Enter the number : ");
+            i=inp.nextInt();
+
+            if(i%2==0 || i%4==0 || i%100==0){
+                total+=i;
+            }
+        }
+        while(i%2==0);
+        System.out.println("Total :"+total);
+        
+    }
+}
+
