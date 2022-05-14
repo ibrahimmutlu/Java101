@@ -808,3 +808,43 @@ public class ArtikYil {
             }
     }
 }
+
+
+
+//GİRİLEN SAYIYA KADAR OLAN
+
+import java.util.Scanner;
+
+public class Ucvedordebolunen {
+
+    public static void main(String[]args){
+
+        int k,toplam = 0,terimsayisi=0;
+
+        double ortalama=0;
+
+         System.out.print("Sayi Giriniz : ");
+
+        Scanner inp =new Scanner(System.in);
+
+        k = inp.nextInt();
+
+        for(int i=0; i<=k; i++){
+
+             if(i%12==0){
+
+                 System.out.println(i);
+
+                toplam =toplam + i;
+
+                terimsayisi = terimsayisi+ 1;
+
+            }
+             ortalama = toplam / terimsayisi;
+
+        }
+        System.out.print("Ortalama : "+ortalama);
+
+    }
+}
+
