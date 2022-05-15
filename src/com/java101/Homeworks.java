@@ -878,3 +878,34 @@ public class Teksayiyakadar {
     }
 }
 
+
+
+
+//GİRİLEN SAYIDAN KÜÇÜK 2'NİN KUVVETLERİNİ BULAN PROGRAM
+
+import java.util.Scanner;
+
+public class Dortvebesinkuvvetleri {
+
+    public static void main(String[]args){
+
+        int n;
+
+        Scanner scan=new Scanner(System.in);
+
+        System.out.print("Bir sayi giriniz :");
+
+        n= scan.nextInt();
+
+        for(int i=1 ; i<=n; i*=4){
+
+            System.out.println("4 un kuvveti olan sayilar :"+i);
+        }
+        for(int k=1 ; k<=n; k*=5){
+
+            System.out.println("5 in kuvveti olan sayilar :"+k);
+        }
+    }
+}
+
+
