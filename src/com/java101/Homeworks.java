@@ -881,7 +881,7 @@ public class Teksayiyakadar {
 
 
 
-//GİRİLEN SAYIDAN KÜÇÜK 2'NİN KUVVETLERİNİ BULAN PROGRAM
+//GİRİLEN SAYIDAN KÜÇÜK 4 VE 5'İN KUVVETLERİNİ BULAN PROGRAM
 
 import java.util.Scanner;
 
