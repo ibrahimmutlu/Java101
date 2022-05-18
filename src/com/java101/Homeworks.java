@@ -954,3 +954,37 @@ public class Kombinasyon {
 }
 
 
+
+
+//ÜSLÜ SAYI HESAPLAYAN PROGRAM
+
+import java.util.Scanner;
+
+public class Uslusayi {
+
+    public static void main(String[]args){
+
+    Scanner scan=new Scanner(System.in);
+
+    int i,k,l,total=1;
+
+    System.out.print("Ussu alinacak sayiyi giriniz : ");
+
+    k= scan.nextInt();
+
+    System.out.print("Us olacak sayiyi giriniz : ");
+
+    l=scan.nextInt();
+
+    for(i=1 ; i<=l ; i++){
+
+        total*=k;
+
+    }System.out.print("Sonuc : " +total);
+
+    }
+}
+
+
+
+
