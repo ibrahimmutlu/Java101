@@ -920,7 +920,7 @@ public class Kombinasyon {
 
         Scanner inp=new Scanner(System.in);
 
-        int n,r,i,toplam1=1,toplam2=1,toplam3=1,kombinasyon;
+        int n,r,i,deger1=1,deger2=1,deger3=1,kombinasyon;
 
         System.out.print("Kombinasyonu alinacak sayiyi giriniz : " );
 
@@ -932,24 +932,25 @@ public class Kombinasyon {
 
         for(i=1;i<=n;i++){
 
-            toplam1=toplam1*i;
+            deger1=deger1*i;
 
         }
         for(i=1;i<=r;i++){
 
-            toplam2=toplam2*i;
+            deger2=deger2*i;
 
         }
 
         for(i=1;i<=n-r;i++){
 
-            toplam3=toplam3*i;
+            deger3=deger3*i;
         }
 
-        kombinasyon=toplam1/(toplam2*toplam3);
+        kombinasyon=deger1/(deger2*deger3);
 
         System.out.print("Kombinasyon sonucu : "+kombinasyon);
     }
 
 }
+
 
