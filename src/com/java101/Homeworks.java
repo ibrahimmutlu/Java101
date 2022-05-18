@@ -909,3 +909,49 @@ public class Dortvebesinkuvvetleri {
 }
 
 
+
+// KOMBİNASYON
+
+import java.util.Scanner;
+
+public class Kombinasyon {
+
+    public static void main(String[]args){
+
+        Scanner inp=new Scanner(System.in);
+
+        int n,r,i,toplam1=1,toplam2=1,toplam3=1,kombinasyon;
+
+        System.out.print("Kombinasyonu alinacak sayiyi giriniz : " );
+
+        n = inp.nextInt();
+
+        System.out.print("Kacli kombinasyonu alinacagini giriniz : ");
+
+        r = inp.nextInt();
+
+        //İlk for dongusu kombinasyon formulundeki bölünendeki faktoriyeli buluyor.
+
+        for(i=1;i<=n;i++){
+
+            toplam1=toplam1*i;
+
+        }
+        for(i=1;i<=r;i++){
+
+            toplam2=toplam2*i;
+
+        }
+
+        for(i=1;i<=n-r;i++){
+
+            toplam3=toplam3*i;
+        }
+
+        kombinasyon=toplam1/(toplam2*toplam3);
+
+        System.out.print("Kombinasyon sonucu : "+kombinasyon);
+    }
+
+}
+
