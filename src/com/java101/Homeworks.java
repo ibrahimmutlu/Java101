@@ -930,8 +930,6 @@ public class Kombinasyon {
 
         r = inp.nextInt();
 
-        //İlk for dongusu kombinasyon formulundeki bölünendeki faktoriyeli buluyor.
-
         for(i=1;i<=n;i++){
 
             toplam1=toplam1*i;
