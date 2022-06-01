@@ -988,3 +988,36 @@ public class Uslusayi {
 
 
 
+
+//BASAMAK TOPLAMI
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[]args){
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Sayi Giriniz :");
+
+        int number = input.nextInt();
+
+        int basValue = 0,result=0;
+
+        while (number != 0) {
+
+            basValue = number%10;
+
+            result+=basValue;
+
+            number/= 10;
+
+        }
+        System.out.println("sonuc : "+result);
+
+    }
+}
+
+
